@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login-Update</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+<body>
+  <div class="loginbox">
+    <img src ="logo1.jpg" class ="logo1">
+      <h1>Login</h1>
+      <form>
+
+        <input type="text" name="" placeholder="   Enter your Username">
+
+        <input type="password" value="FakePSW" id="myInput" placeholder="   Enter your password">
+        <input type="checkbox" onclick="myFunction()">Show Password
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
+        </script>
+        <input type="submit" name="" value="Login">
+        <label><input id="rememberme" name="rememberme" value="remember" type="checkbox" /> &nbsp;Remember me</label>
+
+        <a href="signup.html"> signup </a>
+  </div>
+</body>
+</head>
+</html>
